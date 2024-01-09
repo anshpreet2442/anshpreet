@@ -1,157 +1,244 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Anshpreet Singh </title>
-  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reserved Domain</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap">
+  <style>
+    /* Paste the provided CSS here */
 
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+
+:root {
+  --bg: #000000;
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--bg);
+  color: #fff;
+  font-family: "Inter", "DM Sans", Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.content {
+  text-align: center;
+}
+
+.title {
+  font-size: var(--fs);
+  font-weight: 800;
+  letter-spacing: var(--ls);
+  position: relative;
+  overflow: hidden;
+  background: var(--bg);
+  margin: 0;
+}
+
+.subtitle {
+}
+
+.aurora {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  mix-blend-mode: darken;
+  pointer-events: none;
+}
+
+.aurora__item {
+  overflow: hidden;
+  position: absolute;
+  width: 60vw;
+  height: 60vw;
+  background-color: var(--clr-1);
+  border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  filter: blur(var(--blur));
+  mix-blend-mode: overlay;
+}
+
+.aurora__item:nth-of-type(1) {
+  top: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-1 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(2) {
+  background-color: var(--clr-3);
+  right: 0;
+  top: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-2 12s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(3) {
+  background-color: var(--clr-2);
+  left: 0;
+  bottom: 0;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-3 8s ease-in-out infinite alternate;
+}
+
+.aurora__item:nth-of-type(4) {
+  background-color: var(--clr-4);
+  right: 0;
+  bottom: -50%;
+  animation: aurora-border 6s ease-in-out infinite,
+    aurora-4 24s ease-in-out infinite alternate;
+}
+
+@keyframes aurora-1 {
+  0% {
+    top: 0;
+    right: 0;
+  }
+
+  50% {
+    top: 100%;
+    right: 75%;
+  }
+
+  75% {
+    top: 100%;
+    right: 25%;
+  }
+
+  100% {
+    top: 0;
+    right: 0;
+  }
+}
+
+@keyframes aurora-2 {
+  0% {
+    top: -50%;
+    left: 0%;
+  }
+
+  60% {
+    top: 100%;
+    left: 75%;
+  }
+
+  85% {
+    top: 100%;
+    left: 25%;
+  }
+
+  100% {
+    top: -50%;
+    left: 0%;
+  }
+}
+
+@keyframes aurora-3 {
+  0% {
+    bottom: 0;
+    left: 0;
+  }
+
+  40% {
+    bottom: 100%;
+    left: 75%;
+  }
+
+  65% {
+    bottom: 40%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 0;
+    left: 0;
+  }
+}
+
+@keyframes aurora-4 {
+  0% {
+    bottom: -50%;
+    right: 0;
+  }
+
+  50% {
+    bottom: 0%;
+    right: 40%;
+  }
+
+  90% {
+    bottom: 50%;
+    right: 25%;
+  }
+
+  100% {
+    bottom: -50%;
+    right: 0;
+  }
+}
+
+@keyframes aurora-border {
+  0% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+
+  25% {
+    border-radius: 47% 29% 39% 49% / 61% 19% 66% 26%;
+  }
+
+  50% {
+    border-radius: 57% 23% 47% 72% / 63% 17% 66% 33%;
+  }
+
+  75% {
+    border-radius: 28% 49% 29% 100% / 93% 20% 64% 25%;
+  }
+
+  100% {
+    border-radius: 37% 29% 27% 27% / 28% 25% 41% 37%;
+  }
+}
+
+
+
+    
+  </style>
 </head>
 <body>
-<!-- partial:index.partial.html -->
-<link href='https://fonts.googleapis.com/css?family=Noto+Serif:700,700italic' rel='stylesheet' type='text/css'>
-<canvas></canvas>
-<!-- partial -->
-  <script  src="./script.js"></script>
-
+  <div class="content">
+    <h1 class="title">This domain is reserved by Anshpreet Singh</h1>
+    <p class="subtitle">You can contact Anshpreet via this <a href="https://etus.link/ansh1">link</a></p>
+    <div class="aurora">
+      <div class="aurora__item"></div>
+      <div class="aurora__item"></div>
+      <div class="aurora__item"></div>
+      <div class="aurora__item"></div>
+    </div>
+  </div>
 </body>
 </html>
 
 
-
-
-
-
-<style>
-	
-	
-	
-	</style><script>
-		
-		
-		
-		
-		
-	var particleAlphabet = {
-	Particle: function(x, y) {
-		this.x = x;
-		this.y = y;
-		this.radius = 3.5;
-		this.draw = function(ctx) {
-			ctx.save();
-			ctx.translate(this.x, this.y);
-			ctx.fillStyle = 'green';
-			ctx.fillRect(0, 0, this.radius, this.radius);
-			ctx.restore();
-		};
-	},
-	init: function() {
-		particleAlphabet.canvas = document.querySelector('canvas');
-		particleAlphabet.ctx = particleAlphabet.canvas.getContext('2d');
-		particleAlphabet.W = window.innerWidth;
-		particleAlphabet.H = window.innerHeight;
-		particleAlphabet.particlePositions = [];
-		particleAlphabet.particles = [];
-		particleAlphabet.tmpCanvas = document.createElement('canvas');
-		particleAlphabet.tmpCtx = particleAlphabet.tmpCanvas.getContext('2d');
-
-		particleAlphabet.canvas.width = particleAlphabet.W;
-		particleAlphabet.canvas.height = particleAlphabet.H;
-
-		setInterval(function(){
-			particleAlphabet.changeLetter();
-			particleAlphabet.getPixels(particleAlphabet.tmpCanvas, particleAlphabet.tmpCtx);
-		}, 1200);
-
-		particleAlphabet.makeParticles(1000);
-		particleAlphabet.animate();
-	}, 
-	currentPos: 0,
-	changeLetter: function() {
-		var letters = 'Anshpreet',
-			letters = letters.split('');
-		particleAlphabet.time = letters[particleAlphabet.currentPos];
-		particleAlphabet.currentPos++;
-		if (particleAlphabet.currentPos >= letters.length) {
-			particleAlphabet.currentPos = 0;
-		}
-	},
-	makeParticles: function(num) {
-		for (var i = 0; i <= num; i++) {
-			particleAlphabet.particles.push(new particleAlphabet.Particle(particleAlphabet.W / 2 + Math.random() * 400 - 200, particleAlphabet.H / 2 + Math.random() * 400 -200));
-		}
-	},
-	getPixels: function(canvas, ctx) {
-		var keyword = particleAlphabet.time,
-			gridX = 6,
-			gridY = 6;
-		canvas.width = window.innerWidth;
-		canvas.height = window.innerHeight;
-		ctx.fillStyle = 'red';
-		ctx.font = 'italic bold 430px Lemon Milk';
-		ctx.fillText(keyword, canvas.width / 2 - ctx.measureText(keyword).width / 2, canvas.height / 2 + 100);
-		var idata = ctx.getImageData(0, 0, canvas.width, canvas.height);
-		var buffer32 = new Uint32Array(idata.data.buffer);
-		if (particleAlphabet.particlePositions.length > 0) particleAlphabet.particlePositions = [];
-		for (var y = 0; y < canvas.height; y += gridY) {
-			for (var x = 0; x < canvas.width; x += gridX) {
-				if (buffer32[y * canvas.width + x]) {
-					particleAlphabet.particlePositions.push({x: x, y: y});
-				}
-			}
-		}
-	},
-	animateParticles: function() {
-		var p, pPos;
-		for (var i = 0, num = particleAlphabet.particles.length; i < num; i++) {
-			p = particleAlphabet.particles[i];
-			pPos = particleAlphabet.particlePositions[i];
-			if (particleAlphabet.particles.indexOf(p) === particleAlphabet.particlePositions.indexOf(pPos)) {
-			p.x += (pPos.x - p.x) * .3;
-			p.y += (pPos.y - p.y) * .3;
-			p.draw(particleAlphabet.ctx);
-		}
-		}
-	},
-	animate: function() {
-		requestAnimationFrame(particleAlphabet.animate);
-		particleAlphabet.ctx.fillStyle = 'rgba(23, 41, 58, .8)';
-		particleAlphabet.ctx.fillRect(0, 0, particleAlphabet.W, particleAlphabet.H);
-		particleAlphabet.animateParticles();
-	}
-};
-
-window.onload = particleAlphabet.init;
-	
-	
-	
-		
-		
-		
-		</script>
-		
-		<style>
-	
-	
-	
-	* {
-  margin: 0;
-  padding: 0;
-}
-
-canvas {
-  display: block;
-}
-	
-	
-	
-	
-	
-	</style>
-
-
-
-
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#2FD9E7">
   	
 
@@ -168,8 +255,7 @@ canvas {
             margin: 0;
             padding-bottom: 50px; /* Add padding to avoid content overlap with the footer */
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
-        }
+         
 
         .footer {
             position: fixed;
@@ -193,7 +279,13 @@ canvas {
     </style>
 </head>
 <body>
+<style>
 
+
+
+
+	
+</style>
     <footer class="footer">
         <img src="https://te.legra.ph/file/14ba96b06c24d4b268dd5.png" alt="Secured" class="secured-icon">
         <span>Secured by DMCA</span> | &copy; Anshpreet 2023
@@ -204,74 +296,6 @@ canvas {
 
 
 
-<style>
-    var particleAlphabet = {
-        Particle: function(x, y) {
-            this.x = x;
-            this.y = y;
-            this.radius = 3.5;
-            this.draw = function(ctx) {
-                ctx.save();
-                ctx.translate(this.x, this.y);
-                ctx.fillStyle = 'white'; // Change 'white' to 'blue' here
-                ctx.fillRect(0, 0, this.radius, this.radius);
-                ctx.restore();
-            };
-        },
-        // ...
-    };
-              </style>
 
-
-
-
-
-
-
-
-
-
-              <!DOCTYPE html>
-<html>
-<head>
-    <title>Popup Form</title>
-    <style>
-        /* Styles for the popup */
-        #popup {
-            display: none;
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            background-color: #f2f2f2;
-            padding: 20px;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-        }
-        
-        /* Styles for form elements */
-        #popup input[type="text"] {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        
-        #popup button {
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
-    <script>
-        // JavaScript code remains the same
-    </script>
-</head>
-
-    </div>
-</body>
-</html>
+<link type="image/png" sizes="16x16" rel="icon" href=".../icons8-batman-16.png">
+<link type="image/png" sizes="120x120" rel="icon" href=".../icons8-batman-120.png">
